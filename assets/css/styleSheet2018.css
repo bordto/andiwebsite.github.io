@@ -124,6 +124,11 @@ background {
     font-size: 17px;
 }
 
+#johnst a {
+    color: darkorange;
+    font-size: 17px;
+}
+
 .gallery {
     width: 500px;
     height: 50%;
@@ -149,13 +154,12 @@ background {
     top: 50%;
     left: 50%;
     transform-style: preserve-3d;
-    transform: translateZ(200px) translateX(-50%) translateY(-50%);
+    transform: translateZ(300px) translateX(-50%) translateY(-50%);
 }
 
 
 .abouttitle {
-
-        display: inline-block;
+    display: inline-block;
     margin: auto;
     right: 1em;
     position: fixed;
@@ -179,7 +183,7 @@ background {
 }
 
 #container {
-        display: flex;
+    display: flex;
     justify-content: center;
-    padding-top: 12%;
+    padding-top: 11%;
 }
