@@ -4,6 +4,7 @@
 <head>
     <title>Andi Bordt 2018</title>
     <link rel="stylesheet" href="assets/css/styleSheet2018.css">
+    <link rel="shortcut icon" type="image/png" href="assets/photos/andi-favicon.png">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/scripts/scripts.js"></script>
 </head>
@@ -13,27 +14,30 @@
    
    <!-- HEADER AND OVERLAY------------>
     <div class='header'>
-        <div onclick="on()" class="abouttitle">ABOUT</div>
+        <div class="abouttitle">ABOUT</div>
         <div class="titlename">
             <a href="http://www.andibordt.com" id="name">Andi Bordt 2018©</a>
         </div>
     </div>
     
-    <div id="overlay" onclick="off()">
+    <div id="overlay">
         <div id="aboutWriteup">
             <p id="aboutTitle">ANDI BORDT 2018©</p>
             <p id="bio">I am a multidisciplinary artist and designer based in Toronto. Between pursuing my Bachelors of Design at OCAD University and maintaining a freelance and private practice — My experimental typography work has been popping up in various city settings.<br><br>As of late my work mainly consists of text-based pieces that are strategically placed in contexts where fine art is not usually present, such as industrial buildings, vacant properties, and unmarked doors – appearing in non-gallery settings.</p><br>
             <div id="Currentclients">
                 Clientele:
-                <a href="http://www.kotn.com" data-link-type="external" data-link-value="www.kotn.com">KOTN</a> ,
-                <a href="http://untitledandco.com/" data-link-type="external" data-link-value="http://untitledandco.com/">Untitled&amp;Co</a> ,
-                <a href="http://paleblackco.bigcartel.com/" data-link-type="external" data-link-value="http://paleblackco.bigcartel.com/">Nightmare</a>,
-                <a href="http://www.instagram.com/diptych.studio" data-link-type="external" data-link-value="http://www.instagram.com/diptych.studio">Diptych Studio</a> ,
-                <a href="http://www.instagram.com/grey93" data-link-type="external" data-link-value="http://www.instagram.com/grey93">Grey93</a>,
-                <a href="http://moonshine.mu/" data-link-type="external" data-link-value="http://moonshine.mu/">Moonshine</a>
+                <a href="http://www.kotn.com" target="_blank" data-link-type="external" data-link-value="www.kotn.com">KOTN</a> ,
+                <a href="http://untitledandco.com/" target="_blank" data-link-type="external" data-link-value="http://untitledandco.com/">Untitled&amp;Co</a> ,
+                <a href="http://paleblackco.bigcartel.com/" target="_blank" data-link-type="external" data-link-value="http://paleblackco.bigcartel.com/">Nightmare</a>,
+                <a href="http://www.instagram.com/diptych.studio" target="_blank" data-link-type="external" data-link-value="http://www.instagram.com/diptych.studio">Diptych Studio</a> ,
+                <a href="http://www.instagram.com/grey93" target="_blank" data-link-type="external" data-link-value="http://www.instagram.com/grey93">Grey93</a>
+                <!---<a href="http://moonshine.mu/" data-link-type="external" data-link-value="http://moonshine.mu/">Moonshine</a>--->
             </div><br>
+            <p id="johnst">Current:
+                <a href="http://www.johnst.com" target="_blank" data-link-type="external" data-link-value="www.johnst.com">John St.</a> - Graphic Design Intern
+            </p>
             <p id="Fancyboys">Past Work:
-                <a href="http://www.thisisfancyboys.com" data-link-type="external" data-link-value="www.thisisfancyboys.com">Fancy Boys</a> - Graphic Design Intern - Digital and print-based projects for clients such as:<br> The Killers, Julian Casablancas, Karen O, Cult Records, Ryan Hemsworth, NXNE, TD Canada Trust, 18Waits, Third Eye Blind, Beau’s Brewery and Equator Coffee .
+                <a href="http://www.thisisfancyboys.com" target="_blank" data-link-type="external" data-link-value="www.thisisfancyboys.com">Fancy Boys</a> - Graphic Design Intern - Digital and print-based projects for clients such as:<br> The Killers, Julian Casablancas, Karen O, Cult Records, Ryan Hemsworth, NXNE, TD Canada Trust, 18Waits, Third Eye Blind, Beau’s Brewery and Equator Coffee .
             </p>
         </div>
     </div>
@@ -65,9 +69,15 @@
     //  $(".aboutOverlay").css("display","block");
     //});
 
-    $(".about").click(function() {
-        $(".aboutOverlay").fadeToggle("fast", "linear");
-    });
+    
+    $(".abouttitle").click(function() {
+        $("#overlay").fadeIn("fast");
+        });
+    $("#overlay").click(function() {
+        $("#overlay").fadeOut("slow");
+        });
+    
+    
 </script>
     <script type="text/javascript" src="assets/vanillaTilt/vanilla-tilt.js"></script>
     <script type="text/javascript">
@@ -75,7 +85,7 @@
             max: 30,
             speed: 400,
             glare: true,
-            perspective: 1000
+            perspective: 750
         });
         
     </script>
